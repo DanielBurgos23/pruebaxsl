@@ -11,7 +11,7 @@
         <th style="text-align:left">Title</th>
         <th style="text-align:left">Artist</th>
       </tr>
-      <xsl:for-each select="catalog/cd">
+      <xsl:for-each select="catalog/cd[artist='Bob Dylan']">
       <tr>
         <td><xsl:value-of select="catalog/cd/title"/></td>
         <td><xsl:value-of select="catalog/cd/artist"/></td>
