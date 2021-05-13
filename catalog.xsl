@@ -13,8 +13,8 @@
       </tr>
       <xsl:for-each select="catalog/cd">
       <tr>
-        <td><xsl:value-of select="title"/></td>
-        <td><xsl:value-of select="artist"/></td>
+        <td><xsl:value-of select="catalog/cd/title"/></td>
+        <td><xsl:value-of select="catalog/cd/artist"/></td>
       </tr>
       </xsl:for-each>
     </table>
